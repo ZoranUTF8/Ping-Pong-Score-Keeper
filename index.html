@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ping Pong Score Keeper</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+</head>
+
+<body>
+    <section class="section">
+
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="card">
+                        <div class="card-image">
+                            <figure class="image is-2by1">
+                                <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.grude-online.info%2Fwp-content%2Fuploads%2F2021%2F04%2Fstolni-tenis-585x390.jpg&f=1&nofb=1 alt="
+                                    Placeholder image">
+                            </figure>
+                        </div>
+                        <div class="card-header">
+                            <p class="card-header-title is-centered">
+                                Ping Pong Score Keeper
+                            </p>
+                        </div>
+                        <div class="card-content ">
+                            <h1 id="mainH1" class="title is-1 "><span id="player1H1">Player 1: 0</span> - <span id="player2H1">
+                                    Player
+                                    2: 0</span></h1>
+                            <p class="subtitle">Use the buttons below set the score</p>
+
+
+                            <label for="gamesNum" class="label is-large is-inline">Playing rounds?</label>
+                            <div class="select is-rounded">
+                                <select name="gamesNum" id="gamesNumSelect">
+                                    <option value="0">Playing to:</option>
+                                    <option value="11">11</option>
+                                    <option value="21">21</option>
+                                </select>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <button id="player1Btn" class="  is-large is-primary button card-footer-item">+1 Player
+                                1</button>
+                            <button id="player2Btn" class="is-large is-info button card-footer-item">+1 Player
+                                2</button>
+                            <button id="restartBtn" class="is-large is-danger button card-footer-item">Restart</button>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="content has-text-centered">
+              <p>
+                <strong>Ping Pong Score Keeper</strong> by <a>Zoran Janjic</a>.
+              </p>
+            </div>
+          </footer>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
